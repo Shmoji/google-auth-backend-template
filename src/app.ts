@@ -1,8 +1,9 @@
 /* eslint-disable @typescript-eslint/no-floating-promises */
-import config from 'config'
 // import timeout from 'connect-timeout'
 import cors from 'cors'
 import dotenv from 'dotenv'
+dotenv.config()
+import config from 'config'
 import express from 'express'
 
 import { connectMongoDB } from './db/mongodb'
@@ -10,8 +11,6 @@ import { requestLogger, setCorrelationId } from './middleware'
 import { routes } from './routes'
 
 const app = express()
-
-dotenv.config()
 
 // Middlewares
 app.use(cors())

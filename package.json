@@ -30,12 +30,12 @@
     "bn.js": "5.2.0",
     "buffer-equal-constant-time": "^1.0.1",
     "cheerio": "1.0.0-rc.10",
-    "config": "^3.3.6",
+    "config": "^3.3.9",
     "connect-timeout": "^1.9.0",
     "cors": "^2.8.5",
     "date-fns": "2.28.0",
     "dayjs": "^1.10.7",
-    "dotenv": "^10.0.0",
+    "dotenv": "^16.0.3",
     "escape-string-regexp": "4.0.0",
     "express": "^4.17.1",
     "express-fileupload": "1.2.1",
@@ -67,8 +67,6 @@
     "winston": "^3.3.3"
   },
   "devDependencies": {
-    "@commitlint/cli": "16.0.1",
-    "@commitlint/config-conventional": "16.0.0",
     "@types/body-parser": "^1.19.2",
     "@types/config": "^0.0.40",
     "@types/connect-timeout": "0.0.36",
@@ -87,20 +85,10 @@
     "@types/tunnel": "^0.0.3",
     "@types/uuid": "8.3.4",
     "eslint": "8.5.0",
-    "eslint-config-galex": "3.5.3",
     "husky": "7.0.4",
-    "lint-staged": "12.1.4",
     "npm-run-all": "4.1.5",
     "prettier": "2.5.1",
     "ts-node": "^10.4.0",
     "typescript": "^4.5.2"
-  },
-  "lint-staged": {
-    "*.+(js|ts|tsx)": [
-      "yarn lint"
-    ],
-    "*.+(js|json|ts|tsx)": [
-      "yarn format"
-    ]
   }
 }
